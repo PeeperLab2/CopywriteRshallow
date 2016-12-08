@@ -236,7 +236,7 @@ CopywriteRshallow <- function(sample.control, destination.folder, reference.fold
         if (is.paired.end[i]) {
             flag <- scanBamFlag(isProperPair = TRUE)
             param <- ScanBamParam(flag = flag, what = "mapq")
-            filter <- FilterRules(list(isHighQual = function(x) {
+            filter <- S4Vectors::FilterRules(list(isHighQual = function(x) {
                 x$mapq >= 37
             }))
             filterBam(sample.paths[i], file.path(destination.folder,
@@ -253,7 +253,7 @@ CopywriteRshallow <- function(sample.control, destination.folder, reference.fold
                    "param = param)")
         } else {
             param <- ScanBamParam(what = "mapq")
-            filter <- FilterRules(list(isHighQual = function(x) {
+            filter <- S4Vectors::FilterRules(list(isHighQual = function(x) {
                 x$mapq >= 37
             }))
             filterBam(sample.paths[i], file.path(destination.folder,

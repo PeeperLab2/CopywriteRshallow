@@ -8,7 +8,7 @@ Maintainer: Thomas Kuilman <t.kuilman@nki.nl>
 Imports: matrixStats, gtools, data.table, S4Vectors, chipseq, IRanges, Rsamtools, DNAcopy, GenomicAlignments, GenomicRanges, CopyhelpeR, GenomeInfoDb, futile.logger
 Depends: R(>= 3.1), BiocParallel
 Suggests: BiocStyle, SCLCBam, snow
-URL: https://github.com/PeeperLab/CopywriteR
+URL: https://github.com/PeeperLab/CopywriteRshallow
 Description: CopywriteRshallow can be applied to low-coverage WGS
 License: GPL-2
 biocViews: TargetedResequencing, ExomeSeq, CopyNumberVariation, Preprocessing, Visualization, Coverage
